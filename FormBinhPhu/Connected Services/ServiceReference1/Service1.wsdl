@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/xphu" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_DsAcount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsAcount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsAcount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsAcountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DangNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhap" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DangNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Account_InputMessage">
+    <wsdl:part name="parameters" element="tns:Account" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Account_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemAc_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemAc" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemAc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemAcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaAc_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaAc" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaAc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaAcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaAc_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaAc" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaAc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaAcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsContents_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsContents" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsContents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsContentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsAns_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsAns" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsAns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsAnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoadContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadContent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoadContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaVote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaVote" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaVote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemVote_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemVote" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemVote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Idacc_InputMessage">
+    <wsdl:part name="parameters" element="tns:Idacc" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Idacc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IdaccResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Dsopt_InputMessage">
+    <wsdl:part name="parameters" element="tns:Dsopt" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Dsopt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsoptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Luotvote_InputMessage">
+    <wsdl:part name="parameters" element="tns:Luotvote" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Luotvote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LuotvoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CapnhatFlag_InputMessage">
+    <wsdl:part name="parameters" element="tns:CapnhatFlag" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CapnhatFlag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapnhatFlagResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="DsAcount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsAcount" message="tns:IService1_DsAcount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsAcountResponse" message="tns:IService1_DsAcount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DangNhap" message="tns:IService1_DangNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DangNhapResponse" message="tns:IService1_DangNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Account">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Account" message="tns:IService1_Account_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AccountResponse" message="tns:IService1_Account_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemAc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThemAc" message="tns:IService1_ThemAc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemAcResponse" message="tns:IService1_ThemAc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaAc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SuaAc" message="tns:IService1_SuaAc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaAcResponse" message="tns:IService1_SuaAc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaAc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/XoaAc" message="tns:IService1_XoaAc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaAcResponse" message="tns:IService1_XoaAc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThemOption" message="tns:IService1_ThemOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemOptionResponse" message="tns:IService1_ThemOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/XoaOption" message="tns:IService1_XoaOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaOptionResponse" message="tns:IService1_XoaOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DsContents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsContents" message="tns:IService1_DsContents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsContentsResponse" message="tns:IService1_DsContents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DsAns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsAns" message="tns:IService1_DsAns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsAnsResponse" message="tns:IService1_DsAns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoadContent" message="tns:IService1_LoadContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoadContentResponse" message="tns:IService1_LoadContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DsOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsOption" message="tns:IService1_DsOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsOptionResponse" message="tns:IService1_DsOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DsCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsCode" message="tns:IService1_DsCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsCodeResponse" message="tns:IService1_DsCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaVote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SuaVote" message="tns:IService1_SuaVote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaVoteResponse" message="tns:IService1_SuaVote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemVote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThemVote" message="tns:IService1_ThemVote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemVoteResponse" message="tns:IService1_ThemVote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SuaOption" message="tns:IService1_SuaOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaOptionResponse" message="tns:IService1_SuaOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Idacc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Idacc" message="tns:IService1_Idacc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IdaccResponse" message="tns:IService1_Idacc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Dsopt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Dsopt" message="tns:IService1_Dsopt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsoptResponse" message="tns:IService1_Dsopt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Luotvote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Luotvote" message="tns:IService1_Luotvote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LuotvoteResponse" message="tns:IService1_Luotvote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CapnhatFlag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CapnhatFlag" message="tns:IService1_CapnhatFlag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CapnhatFlagResponse" message="tns:IService1_CapnhatFlag_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DsAcount">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsAcount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <soap:operation soapAction="http://tempuri.org/IService1/DangNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Account">
+      <soap:operation soapAction="http://tempuri.org/IService1/Account" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemAc">
+      <soap:operation soapAction="http://tempuri.org/IService1/ThemAc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaAc">
+      <soap:operation soapAction="http://tempuri.org/IService1/SuaAc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaAc">
+      <soap:operation soapAction="http://tempuri.org/IService1/XoaAc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/ThemOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/XoaOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DsContents">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsContents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DsAns">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsAns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadContent">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoadContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DsOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DsCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaVote">
+      <soap:operation soapAction="http://tempuri.org/IService1/SuaVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemVote">
+      <soap:operation soapAction="http://tempuri.org/IService1/ThemVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/SuaOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Idacc">
+      <soap:operation soapAction="http://tempuri.org/IService1/Idacc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dsopt">
+      <soap:operation soapAction="http://tempuri.org/IService1/Dsopt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Luotvote">
+      <soap:operation soapAction="http://tempuri.org/IService1/Luotvote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapnhatFlag">
+      <soap:operation soapAction="http://tempuri.org/IService1/CapnhatFlag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:57820/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

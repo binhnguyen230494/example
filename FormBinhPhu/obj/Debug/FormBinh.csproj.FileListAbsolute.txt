@@ -1,0 +1,17 @@
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\FormBinhPhu.exe.config
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\FormBinhPhu.exe
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\FormBinhPhu.pdb
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\MySql.Data.dll
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\Google.Protobuf.dll
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\bin\Debug\MySql.Data.xml
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinh.csprojAssemblyReference.cache
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.FrmDangNhap.resources
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.FrmLoadOption.resources
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.FrmOption.resources
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.FrmVote.resources
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.Properties.Resources.resources
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinh.csproj.GenerateResource.cache
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinh.csproj.CoreCompileInputs.cache
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinh.csproj.CopyComplete
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.exe
+C:\Users\STB\Downloads\chung2\chung2\FormBinhPhu\obj\Debug\FormBinhPhu.pdb
