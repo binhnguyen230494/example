@@ -60,11 +60,11 @@ namespace FormBinhPhu
         {
             get
             {
-                return idopt;
+                return idopttt;
             }
             set
             {
-                idopt = value;
+                idopttt = value;
             }
         }
     }
